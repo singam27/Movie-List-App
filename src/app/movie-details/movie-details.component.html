@@ -1,0 +1,43 @@
+<div class="details" fxLayout="row" fxLayoutAlign="space-evenly center">
+
+    <img [src]="movieDetails.Poster" style="padding-top: 5%;">
+
+    <table id="movieDetailsTable">
+        <tr>
+            <td>Movie Name</td>
+            <td>{{movieDetails.Title}}</td>
+        </tr>
+
+        <tr>
+            <td>Release Date</td>
+            <td>{{movieDetails.Released}}</td>
+        </tr>
+
+        <tr>
+            <td>Director</td>
+            <td>{{movieDetails.Director}}</td>
+        </tr>
+
+        <tr>
+            <td>List of Actors</td>
+            <td>{{movieDetails.Actors}}</td>
+        </tr>
+
+        <tr>
+            <td>A Full Plot </td>
+            <td>{{movieDetails.Plot}}</td>
+        </tr>
+
+        <tr>
+            <td>MetaScore</td>
+            <td>{{movieDetails.Metascore}}</td>
+        </tr>
+
+        <tr>
+            <td>IMDbRating</td>
+            <td>{{movieDetails.imdbRating}}</td>
+        </tr>
+
+    </table>
+
+</div>

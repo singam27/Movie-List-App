@@ -1,0 +1,24 @@
+  .search-form {
+    width: 80%;
+    padding-left: 5%;
+    padding-top: 5%;
+  }
+  
+  .img{
+      width: 100%;
+      margin-bottom: 18%;
+  }
+
+  .card-movies{
+      width: 15%;
+      margin-bottom: 2%;
+            
+  }
+
+  .container {
+    min-height: 100%;
+    width: 100%;
+  }
+
+/*   .mat-card { border: 1px solid #000}; */
+  

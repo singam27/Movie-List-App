@@ -1,0 +1,16 @@
+<mat-form-field class="search-form">
+    <input matInput placeholder="Search Movies" type="text" (keyup.enter)="searchString(searchValue.value)" #searchValue>
+</mat-form-field>
+<button button="submit" mat-stroked-button color="black" (click)="searchString(searchValue.value)">Search</button>
+
+<div class="container" fxLayout="row wrap" fxLayout.xs="column wrap" fxLayoutGap="0.5%" fxLayoutAlign="center center">
+    <mat-card class="card-movies" *ngFor="let movie of movieList">
+        <mat-card-title fxLayout.gt-xs="row" fxLayout.xs="column">
+            <span fxFlex="100%" style="font-size: small;">
+                <a routerLink="/movieDetails/{{movie.imdbID}}" style="color: black;"> 
+                    {{movie.Title}} -{{movie.Year}}</a>
+            </span>
+        </mat-card-title>
+        <img mat-card-lg-image [src]="movie.Poster">
+    </mat-card>
+</div>
